@@ -11,11 +11,14 @@ export const action = async ({ request }) => {
     shop: session.shop,
   });
 
+  console.log("Product feed generated successfully. Product count:", result.productCount, "File URL:", result.fileUrl);
+
   return new Response(
     JSON.stringify({
-      status: "success",
-      productCount: result.productCount,
-      fileUrl: result.fileUrl,
+      return_value: {
+        productCount: result.productCount,
+        fileUrl: result.fileUrl,
+      },
     }),
     {
       headers: { "Content-Type": "application/json" },

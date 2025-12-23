@@ -6,4 +6,5 @@ uid = "75e6631e-c235-fbd4-36a0-e4ee85376f6ade5c6c8c"
 description = "Generate and upload product feed to Shopify Files"
 runtime_url = "https://products-feed.onrender.com/app/flow/generate-feed"
 
-[settings]
+schema = "./schema.graphql"
+return_type_ref = "ProductFeed"
