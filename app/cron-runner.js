@@ -3,8 +3,7 @@ import { runShopSyncJob } from "./jobs/shopSync.server.js";
 
 console.log("⏰ Cron runner started");
 
-// Runs every hour
-cron.schedule("*/10 * * * *", async () => {
+cron.schedule("0 1 * * *", async () => {
   try {
     console.log("⏰ Hourly shop sync started");
     await runShopSyncJob();
