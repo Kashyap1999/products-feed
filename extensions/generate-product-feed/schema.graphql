@@ -1,7 +1,0 @@
-"Represents the generated product feed"
-type ProductFeed {
-  "Number of products in the feed"
-  productCount: Int!
-  "URL of the uploaded feed file"
-  fileUrl: String!
-}
