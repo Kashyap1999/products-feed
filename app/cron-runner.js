@@ -14,5 +14,5 @@ export default async function start() {
     } catch (error) {
       console.error("❌ Cron job failed", error);
     }
-  }, 1000 * 60 * 5); // 5 minutes
+  }, 1000 * 60 * 60);
 }
